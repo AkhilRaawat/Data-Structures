@@ -5,6 +5,7 @@ class Solution {
     for(int i=0;i<prices.length;i++){
         currentprofit=prices[i]-buyingprice;
         maxprofit=Math.max(currentprofit,maxprofit);
+        
         buyingprice=Math.min(buyingprice,prices[i]);
     }
     return maxprofit;
